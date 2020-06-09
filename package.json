@@ -1,0 +1,40 @@
+{
+  "name": "google-login-btn",
+  "version": "1.0.0",
+  "description": "Login with google",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/todorovicjelena/google-login-btn.git"
+  },
+  "author": "Jelena Todorovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/todorovicjelena/google-login-btn/issues"
+  },
+  "homepage": "https://github.com/todorovicjelena/google-login-btn#readme",
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "typescript": "^3.9.5",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
