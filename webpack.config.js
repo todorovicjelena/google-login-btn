@@ -1,5 +1,4 @@
-webpack;
-var path = require('path');
+let path = require('path');
 
 module.exports = {
   mode: 'production',
