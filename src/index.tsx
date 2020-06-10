@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 
+
 export interface GoogleProps {
   [x: string]: any;
   client_id: string;
@@ -18,7 +19,7 @@ export interface LoginProps {
 }
 
 class GoogleLoginButton extends Component<LoginProps, {}> {
-  constructor(props) {
+  constructor(props: Readonly<LoginProps>) {
     super(props);
     this.state = {};
   }
