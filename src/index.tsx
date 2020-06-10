@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
 
-
 export interface GoogleProps {
   [x: string]: any;
   client_id: string;
