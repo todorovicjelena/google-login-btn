@@ -91,8 +91,8 @@ class GoogleLoginButton extends Component<LoginProps, {}> {
   render() {
     const url = this.getLoginUrl();
     return (
-      <div className="LoginWrapper">
-        <a className="Login" href={url}>
+      <div className="GoogleLoginWrapper">
+        <a className="GoogleLogin" href={url}>
           Sign in with your google account
         </a>
       </div>
