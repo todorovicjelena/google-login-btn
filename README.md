@@ -9,7 +9,7 @@ Clone or download zip file
 ```bash
 npm run build
 sudo npm link (in package)
-npm link react-google-login (in your project folder)
+npm link google-login-btn (in your project folder)
 
 ```
 
