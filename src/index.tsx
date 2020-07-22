@@ -12,8 +12,6 @@ export interface GoogleProps {
 }
 
 export interface LoginProps {
-  onLogin: (code: string) => void;
-  onError: (error: string) => void;
   googleProps: GoogleProps;
 }
 
@@ -22,43 +20,7 @@ class GoogleLoginButton extends Component<LoginProps, {}> {
     super(props);
     this.state = {};
   }
-
-  getUrlParameter(searchParameter: string): string {
-    let params = window.location.search;
-    let pageUrl = '';
-
-    try {
-      pageUrl = decodeURIComponent(params.substr(1));
-    } catch (err) {}
-    if (pageUrl !== '') {
-      let urlVariable = pageUrl.split('&');
-      let parameterName: string[];
-
-      for (let i = 0; i < urlVariable.length; i++) {
-        parameterName = urlVariable[i].split('=');
-
-        if (parameterName[0] === searchParameter) {
-          if (parameterName[1] !== undefined) {
-            return parameterName[1];
-          }
-
-          return '';
-        }
-      }
-    }
-
-    return '';
-  }
-
-  componentDidMount(): void {
-    const google_code = this.getUrlParameter('code');
-    const google_error = this.getUrlParameter('error');
-
-    google_code
-      ? this.props.onLogin(google_code as string)
-      : this.props.onError(google_error as string);
-  }
-
+  
   getLoginUrl() {
     const googleParams = this.props.googleProps;
     const availableParams = [];

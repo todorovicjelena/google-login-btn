@@ -10,14 +10,10 @@ export interface GoogleProps {
     prompt?: string;
 }
 export interface LoginProps {
-    onLogin: (code: string) => void;
-    onError: (error: string) => void;
     googleProps: GoogleProps;
 }
 declare class GoogleLoginButton extends Component<LoginProps, {}> {
     constructor(props: Readonly<LoginProps>);
-    getUrlParameter(searchParameter: string): string;
-    componentDidMount(): void;
     getLoginUrl(): string;
     render(): JSX.Element;
 }
