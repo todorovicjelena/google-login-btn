@@ -7,10 +7,14 @@ A Google oAUth Log-in Component for React
 Clone or download zip file
 
 ```bash
-npm run build
+
+npm install
 sudo npm link (in package)
 npm link google-login-btn (in your project folder)
 
+or:
+"google-login-btn": "git://github.com/todorovicjelena/google-login-btn.git"
+npm install
 ```
 
 Install also js-cookie [a link](https://www.npmjs.com/package/js-cookie)
