@@ -13,7 +13,7 @@ sudo npm link (in package)
 npm link google-login-btn (in your project folder)
 
 or:
-
+inside of package.json in dependencies
 "google-login-btn": "git://github.com/todorovicjelena/google-login-btn.git"
 npm install
 ```
